@@ -358,8 +358,10 @@ When publishing research using Alliance data:
 - **GitHub Issues:** https://github.com/alliance-genome/agr_java_software/issues
 
 ### Community
-- **Twitter:** @alliancegenome
-- **Mailing Lists:** Check Alliance website for announcements
+- **Community Forum:** https://community.alliancegenome.org/categories
+- **Facebook:** https://www.facebook.com/AllianceOfGenomeResources
+- **Mastodon:** https://genomic.social/@AllianceGenome
+- **Bluesky:** https://bsky.app/profile/alliancegenome.bsky.social
 
 ---
 
@@ -469,7 +471,10 @@ We welcome feedback and contributions:
 **Alliance of Genome Resources**
 - Website: https://www.alliancegenome.org
 - Email: help@alliancegenome.org
-- Twitter: @alliancegenome
+- Community Forum: https://community.alliancegenome.org/categories
+- Facebook: https://www.facebook.com/AllianceOfGenomeResources
+- Mastodon: https://genomic.social/@AllianceGenome
+- Bluesky: https://bsky.app/profile/alliancegenome.bsky.social
 - GitHub: https://github.com/alliance-genome
 
 ---
