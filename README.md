@@ -8,14 +8,14 @@ Welcome to the Alliance of Genome Resources (Alliance) open data repository on A
 
 The Alliance of Genome Resources is a consortium integrating data from leading model organism databases:
 
-- 🪰 **Drosophila melanogaster** and other Drosophila species
-- 🪱 **Caenorhabditis elegans**
-- 🐟 **Danio rerio** (zebrafish)
-- 🐭 **Mus musculus** (mouse)
-- 🐀 **Rattus norvegicus** (rat)
-- 🍺 **Saccharomyces cerevisiae** (yeast)
-- 🐸 **Xenopus laevis** and **Xenopus tropicalis** (frogs)
-- 👤 **Homo sapiens** (human reference data)
+- **Drosophila melanogaster** and other Drosophila species
+- **Caenorhabditis elegans**
+- **Danio rerio** (zebrafish)
+- **Mus musculus** (mouse)
+- **Rattus norvegicus** (rat)
+- **Saccharomyces cerevisiae** (yeast)
+- **Xenopus laevis** and **Xenopus tropicalis** (frogs)
+- **Homo sapiens** (human reference data)
 
 **Mission:** Provide unified, high-quality genomic data to accelerate biological research and human disease understanding.
 
@@ -69,7 +69,7 @@ Check out [TUTORIAL.md](./TUTORIAL.md) for step-by-step guides on:
 
 ## Documentation
 
-### 📚 [Data Organization Documentation](./DATA_DOCUMENTATION.md)
+### [Data Organization Documentation](./DATA_DOCUMENTATION.md)
 
 Complete reference guide covering:
 - **Dataset Overview** - Scale, update frequency, data categories
@@ -86,7 +86,7 @@ Complete reference guide covering:
 - **File Formats** - TSV, JSON, FASTA, GFF3, GTF, VCF, MITAB
 - **Common Use Cases** - Real-world examples
 
-### 🎓 [Tutorial Guide](./TUTORIAL.md)
+### [Tutorial Guide](./TUTORIAL.md)
 
 Hands-on tutorials with working code examples:
 
@@ -138,12 +138,12 @@ Hands-on tutorials with working code examples:
 
 ## Access Methods
 
-### 🌐 Web Browser
+### Web Browser
 - **Alliance Portal:** https://www.alliancegenome.org
 - **Downloads Page:** https://www.alliancegenome.org/downloads
 - **FTP Browser:** https://s3ftp.flybase.org/releases/current/
 
-### ☁️ AWS S3 (Recommended for Large Downloads)
+### AWS S3 (Recommended for Large Downloads)
 ```bash
 # Anonymous access - no AWS account needed
 # FlyBase data
@@ -155,7 +155,7 @@ aws s3 ls s3://mod-datadumps/8.3.0/DISEASE-ALLIANCE/COMBINED/ --no-sign-request
 aws s3 cp s3://mod-datadumps/8.3.0/DISEASE-ALLIANCE/COMBINED/DISEASE-ALLIANCE_COMBINED_2.tsv.gz . --no-sign-request
 ```
 
-### 📥 Direct Download (wget/curl)
+### Direct Download (wget/curl)
 ```bash
 # wget
 wget https://s3ftp.flybase.org/releases/current/precomputed_files/genes/fbgn_annotation_ID_current.tsv.gz
@@ -164,7 +164,7 @@ wget https://s3ftp.flybase.org/releases/current/precomputed_files/genes/fbgn_ann
 curl -O https://s3ftp.flybase.org/releases/current/precomputed_files/genes/fbgn_annotation_ID_current.tsv.gz
 ```
 
-### 🐍 Python (boto3)
+### Python (boto3)
 ```python
 import boto3
 from botocore import UNSIGNED
@@ -184,13 +184,13 @@ s3.download_file('mod-datadumps',
                 'DISEASE-ALLIANCE_COMBINED_2.tsv.gz')
 ```
 
-### 🗄️ PostgreSQL Database
+### PostgreSQL Database
 ```bash
 # Public read-only access
 psql -h chado.flybase.org -U flybase flybase
 ```
 
-### 🔌 REST API
+### REST API
 ```bash
 # Get gene information
 curl https://www.alliancegenome.org/api/gene/FBgn0000001
@@ -246,32 +246,32 @@ Examples:
 
 ## Common Use Cases
 
-### 🧬 Gene Research
+### Gene Research
 - Convert gene symbols to database IDs
 - Retrieve gene descriptions and annotations
 - Find genes in specific pathways or GO terms
 
-### 🏥 Disease Studies
+### Disease Studies
 - Identify genes associated with human diseases
 - Find model organism disease models
 - Map disease genes to orthologs
 
-### 📊 Expression Analysis
+### Expression Analysis
 - Compare gene expression across developmental stages
 - Analyze tissue-specific expression
 - Explore single-cell expression patterns
 
-### 🔗 Interaction Networks
+### Interaction Networks
 - Build protein-protein interaction networks
 - Analyze genetic interactions
 - Find interaction partners for proteins of interest
 
-### 🧫 Comparative Genomics
+### Comparative Genomics
 - Map orthologs between species
 - Find conserved genes and pathways
 - Compare genomic features across model organisms
 
-### 🧪 Variant Analysis
+### Variant Analysis
 - Access genomic variants in VCF format
 - Link variants to phenotypes
 - Study allele effects

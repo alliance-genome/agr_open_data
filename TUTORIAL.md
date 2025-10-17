@@ -165,11 +165,11 @@ head -n 20 DISEASE-ALLIANCE_COMBINED_2.tsv
 
 ### What You Learned
 
-✓ How to access FlyBase data via public HTTPS
-✓ How to access Alliance integrated data via AWS CLI (no credentials needed)
-✓ How to download and decompress data files
-✓ File naming conventions (`_current` for FlyBase, numbered files for Alliance)
-✓ Understanding the two-tier data organization
+- How to access FlyBase data via public HTTPS
+- How to access Alliance integrated data via AWS CLI (no credentials needed)
+- How to download and decompress data files
+- File naming conventions (`_current` for FlyBase, numbered files for Alliance)
+- Understanding the two-tier data organization
 
 ---
 
@@ -246,9 +246,9 @@ for gene_symbol in genes_to_find:
             'Full_Name': fullname
         })
         
-        print(f"✓ {gene_symbol:12} → {fbgn:12} → {cg_id:10} → {fullname}")
+        print(f"- {gene_symbol:12} → {fbgn:12} → {cg_id:10} → {fullname}")
     else:
-        print(f"✗ {gene_symbol:12} → Not found")
+        print(f"- {gene_symbol:12} → Not found")
 
 # Save results
 results_df = pd.DataFrame(results)
@@ -268,11 +268,11 @@ Loading gene annotation data...
 
 Looking up 5 genes...
 
-✓ white        → FBgn0003996  → CG2759     → white
-✓ ebony        → FBgn0000527  → CG3331     → ebony
-✓ yellow       → FBgn0004034  → CG3879     → yellow
-✓ sevenless    → FBgn0003366  → CG18085    → sevenless
-✓ Notch        → FBgn0004647  → CG3936     → Notch
+- white        → FBgn0003996  → CG2759     → white
+- ebony        → FBgn0000527  → CG3331     → ebony
+- yellow       → FBgn0004034  → CG3879     → yellow
+- sevenless    → FBgn0003366  → CG18085    → sevenless
+- Notch        → FBgn0004647  → CG3936     → Notch
 
 Results saved to gene_lookup_results.csv
 ```
@@ -292,10 +292,10 @@ for fbgn in fbgn_list:
 
 ### What You Learned
 
-✓ How to perform gene symbol → FBgn ID conversion
-✓ How to retrieve annotation IDs (CG numbers)
-✓ Batch lookup techniques using Python pandas
-✓ Working with multiple FlyBase data files together
+- How to perform gene symbol → FBgn ID conversion
+- How to retrieve annotation IDs (CG numbers)
+- Batch lookup techniques using Python pandas
+- Working with multiple FlyBase data files together
 
 ---
 
@@ -462,11 +462,11 @@ print("Chart saved to top_diseases_flybase.png")
 
 ### What You Learned
 
-✓ How to search Alliance-wide disease associations across all species
-✓ How to use FlyBase-specific disease model data
-✓ Cross-species disease model analysis
-✓ Mapping model organism genes to human orthologs
-✓ Visualization of disease-gene relationships
+- How to search Alliance-wide disease associations across all species
+- How to use FlyBase-specific disease model data
+- Cross-species disease model analysis
+- Mapping model organism genes to human orthologs
+- Visualization of disease-gene relationships
 
 ---
 
@@ -610,11 +610,11 @@ if len(embryo_cols) > 0:
 
 ### What You Learned
 
-✓ How to work with large RNA-Seq expression matrices from FlyBase
-✓ Filtering expression data by developmental stage
-✓ Creating expression heatmaps for visualization
-✓ Identifying stage-specific highly expressed genes
-✓ Log-transformation and normalization techniques
+- How to work with large RNA-Seq expression matrices from FlyBase
+- Filtering expression data by developmental stage
+- Creating expression heatmaps for visualization
+- Identifying stage-specific highly expressed genes
+- Log-transformation and normalization techniques
 
 ---
 
@@ -804,12 +804,12 @@ print(f"  Total interactions: {len(expanded_interactions)}")
 
 ### What You Learned
 
-✓ How to access Alliance molecular interaction data
-✓ How to parse PSI-MI TAB format interaction data from FlyBase
-✓ Building protein-protein interaction networks
-✓ Network analysis (centrality, degree, density)
-✓ Network visualization with matplotlib
-✓ Exporting data for Cytoscape analysis
+- How to access Alliance molecular interaction data
+- How to parse PSI-MI TAB format interaction data from FlyBase
+- Building protein-protein interaction networks
+- Network analysis (centrality, degree, density)
+- Network visualization with matplotlib
+- Exporting data for Cytoscape analysis
 
 ---
 
@@ -1003,12 +1003,12 @@ ortholog_table.to_csv('batch_orthology_results.csv', index=False)
 
 ### What You Learned
 
-✓ How to access Alliance-wide orthology data across all species
-✓ How to map genes between Drosophila and human using FlyBase data
-✓ Understanding DIOPT orthology scores
-✓ Filtering orthologs by confidence level
-✓ Identifying disease-associated orthologs
-✓ Batch orthology conversion workflows
+- How to access Alliance-wide orthology data across all species
+- How to map genes between Drosophila and human using FlyBase data
+- Understanding DIOPT orthology scores
+- Filtering orthologs by confidence level
+- Identifying disease-associated orthologs
+- Batch orthology conversion workflows
 
 ---
 

@@ -178,14 +178,14 @@ s3://s3ftp.flybase.org/genomes/
 ## Key Differences from Initial Documentation
 
 ### Incorrect Assumptions:
-1. ❌ Bucket name was `alliance-genome-data` → ✅ Actually `mod-datadumps`
-2. ❌ Alliance structure mirrored FlyBase → ✅ Alliance has completely different structure
-3. ❌ FlyBase was at `s3://alliance-genome-data/` → ✅ Actually at `s3://s3ftp.flybase.org/`
-4. ❌ Combined Alliance+FlyBase structure → ✅ Separate buckets with different organizations
+1. - Bucket name was `alliance-genome-data` → - Actually `mod-datadumps`
+2. - Alliance structure mirrored FlyBase → - Alliance has completely different structure
+3. - FlyBase was at `s3://alliance-genome-data/` → - Actually at `s3://s3ftp.flybase.org/`
+4. - Combined Alliance+FlyBase structure → - Separate buckets with different organizations
 
 ### Correct Structure:
-1. ✅ Alliance: `s3://mod-datadumps/` with version directories containing data type subdirectories
-2. ✅ FlyBase: `s3://s3ftp.flybase.org/releases/` with release directories containing category subdirectories
+1. - Alliance: `s3://mod-datadumps/` with version directories containing data type subdirectories
+2. - FlyBase: `s3://s3ftp.flybase.org/releases/` with release directories containing category subdirectories
 
 ---
 

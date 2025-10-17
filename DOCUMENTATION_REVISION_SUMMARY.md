@@ -1,13 +1,13 @@
 # Documentation Revision Summary
 
 **Date:** 2025-10-17
-**Status:** ✅ DATA_DOCUMENTATION.md Complete | ⏳ TUTORIAL.md and README.md Pending
+**Status:** - DATA_DOCUMENTATION.md Complete | Pending: TUTORIAL.md and README.md Pending
 
 ---
 
 ## What Was Done
 
-### 1. AWS S3 Structure Investigation ✅
+### 1. AWS S3 Structure Investigation -
 
 Connected to actual AWS S3 buckets using both profiles:
 - **Alliance** (`--profile ctabone`): `s3://mod-datadumps/`
@@ -15,7 +15,7 @@ Connected to actual AWS S3 buckets using both profiles:
 
 Discovered actual structure and created `AWS_S3_STRUCTURE_SUMMARY.md`
 
-### 2. Created New DATA_DOCUMENTATION.md ✅
+### 2. Created New DATA_DOCUMENTATION.md -
 
 **Complete rewrite with accurate structure:**
 
@@ -49,25 +49,25 @@ Discovered actual structure and created `AWS_S3_STRUCTURE_SUMMARY.md`
 ### 3. Key Corrections Made
 
 **Original Issues:**
-- ❌ Wrong bucket name (`alliance-genome-data`)
-- ❌ Combined Alliance+FlyBase structure
-- ❌ FlyBase presented as independent
-- ❌ Incorrect file paths and examples
+- - Wrong bucket name (`alliance-genome-data`)
+- - Combined Alliance+FlyBase structure
+- - FlyBase presented as independent
+- - Incorrect file paths and examples
 
 **Fixed:**
-- ✅ Correct bucket: `s3://mod-datadumps/` for Alliance
-- ✅ Correct bucket: `s3://s3ftp.flybase.org/` for FlyBase
-- ✅ Separate, accurate structures for each
-- ✅ FlyBase presented as Alliance component
-- ✅ All file paths verified against actual S3
+- - Correct bucket: `s3://mod-datadumps/` for Alliance
+- - Correct bucket: `s3://s3ftp.flybase.org/` for FlyBase
+- - Separate, accurate structures for each
+- - FlyBase presented as Alliance component
+- - All file paths verified against actual S3
 
 ---
 
 ## Files Completed
 
-1. ✅ **AWS_S3_STRUCTURE_SUMMARY.md** - Detailed AWS structure documentation
-2. ✅ **DATA_DOCUMENTATION.md** - Complete rewrite with correct structure
-3. ✅ **DATA_DOCUMENTATION.md.backup** - Backup of original version
+1. - **AWS_S3_STRUCTURE_SUMMARY.md** - Detailed AWS structure documentation
+2. - **DATA_DOCUMENTATION.md** - Complete rewrite with correct structure
+3. - **DATA_DOCUMENTATION.md.backup** - Backup of original version
 
 ---
 
